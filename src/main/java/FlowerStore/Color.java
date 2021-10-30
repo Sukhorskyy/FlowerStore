@@ -1,4 +1,4 @@
-package Flowers;
+package FlowerStore;
 
 public enum Color {
     RED, BLUE, YELLOW

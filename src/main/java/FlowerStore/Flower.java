@@ -1,11 +1,11 @@
-package Flowers;
+package FlowerStore;
 
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
 @Setter @Getter @ToString
-public class Flower {
+public class Flower extends Item{
     private float sepalLength;
     private double price;
     private FlowerType flowerType;
@@ -26,5 +26,11 @@ public class Flower {
             return true;
         }
         return false;
+    }
+
+
+    @Override
+    public String getDescription() {
+        return this.toString();
     }
 }
